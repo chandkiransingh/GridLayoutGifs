@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
                                 imgAdapter = new ImageAdapter(MainActivity.this,imglist);
                                 gridview.setAdapter(imgAdapter);
                                 if(start>0){
-                                    gridview.scrollListBy(start);
+                                    gridview.smoothScrollToPosition(start+25);
                                 }
                             }
                             else{
@@ -245,24 +245,3 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
